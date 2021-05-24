@@ -7,4 +7,9 @@ def self.most_popular_show
   self.where("rating= ?". self.highest_rating)
 end
 
+
+def self.lowest_rating
+  self.minimum(:rating)
+end
+
 end
